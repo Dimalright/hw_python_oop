@@ -27,9 +27,9 @@ class InfoMessage:
 class Training:
     """Базовый класс тренировки."""
 
-    M_IN_KM: float = 1000
+    M_IN_KM: int = 1000
     LEN_STEP: float = 0.65
-    MINUTES: float = 60
+    MINUTES: int = 60
 
     def __init__(self, action: int, duration: float,
                  weight: float) -> None:
@@ -102,7 +102,7 @@ class Swimming(Training):
 
     LEN_STEP: float = 1.38
     COEFF_CALORIE_1: float = 1.1
-    COEFF_CALORIE_2: float = 2
+    COEFF_CALORIE_2: int = 2
 
     def __init__(self, action: int, duration: float,
                  weight: float,
